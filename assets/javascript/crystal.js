@@ -31,4 +31,21 @@ $( document ).ready(function(){
     num4= Math.floor(Math.random()*11+1);
     userTotal= 0;
     $('#finalTotal').text(userTotal);
+   
     } 
+
+     //adds the wins to the userTotal
+  function yay(){
+    alert("Your Evee is Evolving!");
+      wins++; 
+      $('#numberWins').text(wins);
+      reset();
+    
+    }
+
+    //addes the losses to the userTotal
+  function loser(){
+    alert ("Hm? Something happened...Your Evee did not evolve.");
+      losses++;
+      $('#numberLosses').text(losses);
+      reset()
