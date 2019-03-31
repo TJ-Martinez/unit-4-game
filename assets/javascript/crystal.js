@@ -7,10 +7,10 @@ $( document ).ready(function(){
         $('#randomNumber').text(Random);
         // Appending random number to the randomNumber id in the html doc
         //
-    var num1= Math.floor(Math.random()*11+1)
-    var num2= Math.floor(Math.random()*11+1)
-    var num3= Math.floor(Math.random()*11+1)
-    var num4= Math.floor(Math.random()*11+1)
+    var Firestone= Math.floor(Math.random()*11+1)
+    var Leafstone= Math.floor(Math.random()*11+1)
+    var Waterstone= Math.floor(Math.random()*11+1)
+    var Thunderstone= Math.floor(Math.random()*11+1)
     // Setting up random numbers for each evolution stone
     // Random number has to be between 1 - 12
     var userTotal= 0; 
@@ -25,10 +25,10 @@ $( document ).ready(function(){
     Random=Math.floor(Math.random()*101+19);
     console.log(Random)
     $('#randomNumber').text(Random);
-    num1= Math.floor(Math.random()*11+1);
-    num2= Math.floor(Math.random()*11+1);
-    num3= Math.floor(Math.random()*11+1);
-    num4= Math.floor(Math.random()*11+1);
+    Firestone= Math.floor(Math.random()*11+1);
+    Leafstone= Math.floor(Math.random()*11+1);
+    Waterstone= Math.floor(Math.random()*11+1);
+    Thunderstone= Math.floor(Math.random()*11+1);
     userTotal= 0;
     $('#finalTotal').text(userTotal);
    
@@ -54,7 +54,7 @@ $( document ).ready(function(){
    
      //sets up click for jewels
      $('#one').on ('click', function(){
-        userTotal = userTotal + num1;
+        userTotal = userTotal + Firestone;
         console.log("New userTotal= " + userTotal);
         $('#finalTotal').text(userTotal); 
               //sets win/lose conditions
@@ -67,7 +67,7 @@ $( document ).ready(function(){
 
     })  
     $('#two').on ('click', function(){
-      userTotal = userTotal + num2;
+      userTotal = userTotal + Leafstone;
       console.log("New userTotal= " + userTotal);
       $('#finalTotal').text(userTotal); 
           if (userTotal == Random){
@@ -78,7 +78,7 @@ $( document ).ready(function(){
           } 
     })  
     $('#three').on ('click', function(){
-      userTotal = userTotal + num3;
+      userTotal = userTotal + Waterstone;
       console.log("New userTotal= " + userTotal);
       $('#finalTotal').text(userTotal);
   //sets win/lose conditions
@@ -90,7 +90,7 @@ $( document ).ready(function(){
           } 
     })  
     $('#four').on ('click', function(){
-      userTotal = userTotal + num4;
+      userTotal = userTotal + Thunderstone;
       console.log("New userTotal= " + userTotal);
       $('#finalTotal').text(userTotal); 
         
