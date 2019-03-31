@@ -1,5 +1,15 @@
 /*Create my own style.css or bootstrap or both? */
-
+body {
+    width: 950px;
+    background-color: lightblue;
+}
+.header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    background-color: orange;
+    width: 30%;
+    
+}
 .EvoStone {
 
     width: 5%;
@@ -10,8 +20,52 @@
 
 .instructions {
     background-image: url(http://orig09.deviantart.net/5d93/f/2011/345/1/b/pokeball_vector_by_mangotangofox-d4ivdg0.png);
-    background-size: 98px 98px;
-
-    padding: 50px;
+    background-size: 95px 95px;
+    padding: 52px;
+    background-color: black;
+    width: 50%;
 }
 
+#Rules {
+    background-color: black;
+    padding: 20px;
+    font-weight: bolder;
+    color: white;
+
+}
+
+.numberToMatch {
+    background-color: greenyellow;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#wins {
+    background-color: lightskyblue;
+    text-align: center;
+    
+    width: 20%;
+    float:left;
+}
+
+#losses {
+    background-color: aquamarine;
+    text-align: center;
+    margin-bottom: 5%;
+    width: 20%;
+    float:left;
+    
+}
+.Stones{
+    clear: both;
+}
+
+.userTotal {
+    background-color:darkgreen;
+    text-align: center;
+    width: 35%;
+    color:white;
+
+}
