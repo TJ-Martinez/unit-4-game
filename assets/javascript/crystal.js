@@ -35,7 +35,7 @@ $( document ).ready(function(){
     } 
 
      //adds the wins to the userTotal
-  function yay(){
+  function evolve(){
     alert("Your Evee is Evolving!");
       wins++; 
       $('#numberWins').text(wins);
@@ -44,7 +44,7 @@ $( document ).ready(function(){
     }
 
     //addes the losses to the userTotal
-  function loser(){
+  function NoEvolution(){
     alert ("Hm? Something happened...Your Evee did not evolve.");
       losses++;
       $('#numberLosses').text(losses);
@@ -59,10 +59,10 @@ $( document ).ready(function(){
         $('#finalTotal').text(userTotal); 
               //sets win/lose conditions
             if (userTotal == Random){
-              yay();
+              evolve();
             }
             else if ( userTotal > Random){
-              loser();
+              NoEvolution();
             }   
 
     })  
@@ -71,10 +71,10 @@ $( document ).ready(function(){
       console.log("New userTotal= " + userTotal);
       $('#finalTotal').text(userTotal); 
           if (userTotal == Random){
-            yay();
+            evolve();
           }
           else if ( userTotal > Random){
-            loser();
+            NoEvolution();
           } 
     })  
     $('#three').on ('click', function(){
@@ -83,10 +83,10 @@ $( document ).ready(function(){
       $('#finalTotal').text(userTotal);
   //sets win/lose conditions
             if (userTotal == Random){
-            yay();
+            evolve();
           }
           else if ( userTotal > Random){
-            loser();
+            NoEvolution();
           } 
     })  
     $('#four').on ('click', function(){
@@ -95,10 +95,10 @@ $( document ).ready(function(){
       $('#finalTotal').text(userTotal); 
         
             if (userTotal == Random){
-            yay();
+            evolve();
           }
           else if ( userTotal > Random){
-            loser();
+            NoEvolution();
           }
-    });   
-  }); 
+        });  
+});
