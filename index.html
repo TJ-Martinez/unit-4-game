@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector/ Eeveelution</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/crystal.css">
+</head>
+<body>
+	<div class="header">
+		<h1>EeveeEvolution!</h1>
+	</div>
+	<div class="instructions">
+		<div id="Rules">
+            <h3>How to evolve your Eevee</h3>
+        
+        
+         </br>
+
+        
+       
+            You will be given a random number at the start of your turn.
+        <br><br>
+        There are four evolution stones below. By clicking on a stone you will add 
+        a specific amount of points to your Eevee Evoluton Points. 
+        <br><br>
+        You win the game by matching your Eevee Evolution Points to the Points Needed to Evolve Your Eevee. 
+        <br><br>
+        Your Eevee does not evolve if your Eevee Evolution Points goes pass the Points Needed to Evolve Your Eevee. 
+        <br><br>
+        The value of each stone is hidden from you until you click on it.
+        <br><br>
+        Each time the game starts, or restarts, the game will change the value of each stone.
+        
+        </div>
+    </div>
+;
+	<div class="numberToMatch">
+		<h2>Number that is Needed To Evolve Your Eevee:
+			<span id= "randomNumber"></span>
+		</h2>
+    </div>
+
+    <div class= "Eevee">
+        <img src="assets/images/Eevee2.png" alt="Eevee" height="150" width="150">
+    </div>
+    
+        <div class="winsAndLosses">
+            <div id="wins">
+		<h2>Number of Eevee's that Evolved :
+            <span id= "numberWins"></span></h2>
+            </div>
+
+            </br>
+            <div id="losses">
+			<h2>Number of Eevee's that did NOT Evolve: 
+			<span id= "numberLosses"></span></h2>
+            </div>
+    
+    </div>
+        <div class="Stones">
+            <img src="assets/images/Fire_stone.png" class=EvoStone id="one" alt="Fire Stone">
+            <img src="assets/images/Leaf_stone.png" class=EvoStone id="two" alt="Leaf Stone">
+            <img src="assets/images/Dream_Water_Stone_Sprite.png" class=EvoStone id= "three" alt="Water Stone">
+            <img src="assets/images/Dream_Thunder_Stone_Sprite.png" class=EvoStone id= "four" alt="Thunder Stone">
+        </div>
+    
+    
+    <div class="userTotal">
+            <h2>Your Eevee Evolution Points:
+                <span id="finalTotal"></span>
+            </h2>
+        </div>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    
+        <script type="text/javascript" src="assets/javascript/crystal.js"></script>
+</body>
+</html>
